@@ -16,7 +16,10 @@ const Review = () => {
     index === 0 ? setIndex(people.length - 1) : setIndex(index - 1);
   };
 
-  const randomPerson = () => {};
+  const randomPerson = () => {
+    const random = Math.floor(Math.random() * people.length);
+    setIndex(random);
+  };
 
   return (
     <article className="review">
